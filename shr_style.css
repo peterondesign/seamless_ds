@@ -376,3 +376,57 @@ fieldset:disabled {
 .shr_list_with__no_icon > div:nth-child(2) {
   margin-bottom: 1.5625rem;
 }
+
+/* Spot Card */
+
+.shr_spotcard_wrapper {
+  background: #ffffff;
+  /* Shadows/Card/SpotCard */
+  box-shadow: 0px 15px 65px rgba(19, 50, 82, 0.075);
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 2.188rem 1.875rem 0 1.875rem;
+  position: relative;
+}
+
+.shr_spotcard_wrapper > div {
+  margin-bottom: 0.875rem;
+}
+
+.shr_spotcard_heading {
+  /* Headings/Desktop/H4 (28) */
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  /* Blue/DK1 */
+  color: #1e5083;
+}
+
+.shr_spotcard_paragraph {
+  /* Body/Small (15) */
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* or 150% */
+  /* Dark/Secondary text */
+  color: #777777;
+}
+
+.shr_spotcard_image {
+  position: relative;
+  right: 3.75rem;
+}
+
+.shr_spotcard_alignleft {
+  text-align: left;
+}
+
+.shr_spotcard_aligncenter,
+.shr_spotcard_aligncenter > .shr_spotcard_image {
+  text-align: center;
+  right: initial;
+}
