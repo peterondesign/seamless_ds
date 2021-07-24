@@ -577,3 +577,25 @@ fieldset:disabled {
 .shr_module_card_yellow.shr_module_card_button {
   background: var(--shr_primary_yellow_lt1);
 }
+
+/* Dropdown */
+
+.shr_simple_dropdown_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.shr_simple_dropdown_dropdowncard {
+  /* White */
+  background: #ffffff;
+  /* Shadows/Dropdown */
+  box-shadow: 0px 6px 12px rgba(19, 50, 82, 0.1);
+  border-radius: 10px;
+  padding: 1.25rem 1.875rem;
+}
+
+.shr_simple_dropdown_dropdowncard  > ul {
+  list-style-type: none;
+  color: var(--shr_primary_blue_default);
+  padding: 0;
+}

@@ -1,0 +1,241 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>SeamlessHR Design System</title>
+    <link href="" rel="shortcut icon" type="image/x-icon" />
+    <link href="bootstrap_css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap_css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="shr_style.css">
+</head>
+
+<body>
+    <div id="header_nav">
+        <div class="container-xxl my-md-4 bd-layout">
+            <aside id="sidebar"></aside>
+            <main class="bd-main order-1">
+                <div class="bd-intro ps-lg-4">
+                    <div class="
+                d-md-flex
+                flex-md-row-reverse
+                align-items-center
+                justify-content-between
+              ">
+                        <h1 class="bd-title" id="content">Dropdown</h1>
+                    </div>
+                    <p class="bd-lead">
+                        Use Bootstrap&rsquo;s custom button styles for actions in forms,
+                        dialogs, and more with support for multiple sizes, states, and more.
+                    </p>
+                </div>
+
+                <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <nav id="TableOfContents">
+                        <ul>
+                            <li><a href="#default_filled_buttons">Default filled buttons
+                                </a></li>
+                            <li>
+                                <a href="#large_outline_buttons">Large outline buttons
+                                </a>
+                            </li>
+                            <li><a href="#default_filled_buttons_with_icons">Default filled buttons with icons
+                                </a></li>
+                            <li><a href="#button_css">Button CSS
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="bd-content ps-lg-4">
+                    <h2 id="default_filled_buttons">Examples</h2>
+                    <p>
+                        Dropdown </p>
+                    <div class="bd-example">
+                        <div class="shr_simple_dropdown_wrapper">
+<div class="shr_simple_dropdown_dropdowncard">
+    <ul>
+        <li>Blog</li>
+        <li>E-books</li>
+        <li>Guides & Tutorials<img class="icon_dark.svg"></img></li>
+    </ul>
+</div>
+<div class="shr_simple_dropdown_dropdowncard">
+    <ul>
+        <li>Guide 1</li>
+        <li>Guide 2</li>
+        <li>Guide 3<img class="icon_dark.svg"></img></li>
+    </ul>
+</div>
+                        </div>
+
+                    </div>
+
+                    <div class="highlight">
+                        <pre class="chroma">
+              <code class="language-html" data-lang="html">
+&lt;div class="shr_module_card_wrapper shr_module_card_blue"&gt;
+&lt;div&gt;
+    &lt;div class="shr_module_card_heading"&gt;
+        Recruitment Management
+    &lt;/div&gt;
+    &lt;div class="shr_module_card_paragraph"&gt;
+        You can choose to add more options to your core or premium plan. Or choose to
+        purchase
+        these add-ons as standalone
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shr_module_card_button shr_module_card_blue"&gt;
+    &lt;a&gt;Learn more&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+          </code>
+          </pre>
+                    </div>
+
+                    
+
+                    <h2 id="button_css">Module Card</h2>
+                    <pre class="chroma">
+                  <code class="language-html" data-lang="html"><span class="p">
+/* Module Card */
+.shr_module_card_wrapper {
+    background: #f4fbf4;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.shr_module_card_wrapper > div {
+    padding: 1.875rem;
+}
+
+.shr_module_card_wrapper > div > div {
+    margin-bottom: 1.25rem;
+}
+
+.shr_module_card_heading {
+    /* Headings/Desktop/H4 (28) */
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.shr_module_card_paragraph {
+    /* Body/Small (15) */
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    /* or 150% */
+    /* Dark/Dark */
+    color: #454545;
+}
+
+.shr_module_card_button {
+    text-align: center;
+    background: #d8f1d9;
+    padding: 1.25rem;
+    cursor: pointer;
+    font-family: Avenir;
+    font-style: normal;
+}
+
+.shr_module_card_blue.shr_module_card_wrapper {
+    background: var(--shr_primary_blue_lt2);
+}
+
+.shr_module_card_blue.shr_module_card_button {
+    background: var(--shr_primary_blue_lt1);
+}
+
+.shr_module_card_green.shr_module_card_wrapper {
+    background: var(--shr_primary_green_lt2);
+}
+
+.shr_module_card_green.shr_module_card_button {
+    background: var(--shr_primary_green_lt1);
+}
+.shr_module_card_purple.shr_module_card_wrapper {
+    background: var(--shr_primary_purple_lt2);
+}
+
+.shr_module_card_purple.shr_module_card_button {
+    background: var(--shr_primary_purple_lt1);
+}
+
+.shr_module_card_orange.shr_module_card_wrapper {
+    background: var(--shr_primary_orange_lt2);
+}
+
+.shr_module_card_orange.shr_module_card_button {
+    background: var(--shr_primary_orange_lt1);
+}
+.shr_module_card_red.shr_module_card_wrapper {
+    background: var(--shr_primary_red_lt2);
+}
+
+.shr_module_card_red.shr_module_card_button {
+    background: var(--shr_primary_red_lt1);
+}
+
+.shr_module_card_yellow.shr_module_card_wrapper {
+    background: var(--shr_primary_yellow_lt2);
+}
+
+.shr_module_card_yellow.shr_module_card_button {
+    background: var(--shr_primary_yellow_lt1);
+}
+                    
+                  </code>
+              </pre>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            header_nav = document.getElementById("header_nav")
+            // document.getElementById("header_sidebar").innerHTML =
+            // this.responseText;
+            header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
+
+        }
+        xhttp.open("GET", "component_header_plus_sidebar.html");
+        xhttp.send();
+    </script>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+            sidebar = document.getElementById("sidebar")
+            // document.getElementById("header_sidebar").innerHTML =
+            // this.responseText;
+            sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
+
+        }
+        xhr.open("GET", "sidebar.html");
+        xhr.send();
+    </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="/docs/5.0/assets/js/docs.min.js"></script>
+    <script src="bootstrap_js/bootstrap.js"></script>
+
+</body>
+
+</html>
