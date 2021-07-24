@@ -1,3 +1,57 @@
+/* Colors */
+:root {
+  --shr_primary_white: #fff;
+  --shr_primary_offwhite: #f8f8f6;
+  --shr_primary_blue_dk2: #133252;
+  --shr_primary_blue_dk1: #1e5083;
+  --shr_primary_blue_default: #296db3;
+  --shr_primary_blue_lt1: #9dbcdc;
+  --shr_primary_blue_lt2: #d8e4f1;
+  --shr_primary_blue_lt3: #f4f7fb;
+  --shr_primary_green_dk2: #135216;
+  --shr_primary_green_dk1: #1e8323;
+  --shr_primary_green_default: #29b32f;
+  --shr_primary_green_lt1: #9ddca0;
+  --shr_primary_green_lt2: #d8f1d9;
+  --shr_primary_green_lt3: #f4fbf4;
+  --shr_primary_orange_dk2: #715511;
+  --shr_primary_orange_dk1: #b4881b;
+  --shr_primary_orange_default: #f79b24;
+  --shr_primary_orange_lt1: #fbdf9b;
+  --shr_primary_orange_lt2: #fdf2d7;
+  --shr_primary_orange_lt3: #fdf9f5;
+  --shr_primary_black_dk2: #202020;
+  --shr_primary_black_dk1: #333333;
+  --shr_primary_black_default: #454545;
+  --shr_primary_black_lt1: #aaaaaa;
+  --shr_primary_black_lt2: #dddddd;
+  --shr_primary_black_lt3: #f5f5f5;
+  --shr_primary_red_dk2: #5c1414;
+  --shr_primary_red_dk1: #932020;
+  --shr_primary_red_default: #c92b2b;
+  --shr_primary_red_lt1: #e69e9e;
+  --shr_primary_red_lt2: #f5d8d8;
+  --shr_primary_red_lt3: #fcf4f4;
+  --shr_secondary_yellow_dk2: #686016;
+  --shr_secondary_yellow_dk1: #a69923;
+  --shr_secondary_yellow_default: #e4d22f;
+  --shr_secondary_yellow_lt1: #f2eaa0;
+  --shr_secondary_yellow_lt2: #faf6d9;
+  --shr_secondary_yellow_lt3: #fdfcf4;
+  --shr_secondary_purple_dk2: #460f4b;
+  --shr_secondary_purple_dk1: #701778;
+  --shr_secondary_purple_default: #991fa4;
+  --shr_secondary_purple_lt1: #d099d5;
+  --shr_secondary_purple_lt2: #ecd6ee;
+  --shr_secondary_purple_lt3: #f9f3fa;
+  --shr_secondary_violetblue_dk2: #1d2553;
+  --shr_secondary_violetblue_dk1: #2e3b84;
+  --shr_secondary_violetblue_default: #3f51b5;
+  --shr_secondary_violetblue_lt1: #a7afdd;
+  --shr_secondary_violetblue_lt2: #dcdff1;
+  --shr_secondary_violetblue_lt3: #f5f6fb;
+}
+
 /* Buttons */
 
 .shr_button_defaultsize,
@@ -54,65 +108,65 @@ fieldset:disabled {
 }
 
 .shr_button_blue_filled {
-  background: #296db3;
-  border: 1px solid #296db3;
-  color: white;
+  background: var(--shr_primary_blue_default);
+  border: 1px solid var(--shr_primary_blue_default);
+  color: var(--shr_primary_white);
 }
 
 .shr_button_blue_outline {
   background: transparent;
-  border: 1px solid #296db3;
-  color: #296db3;
+  border: 1px solid var(--shr_primary_blue_default);
+  color: var(--shr_primary_blue_default);
 }
 
 .shr_button_blue_outline:hover,
 .shr_button_blue_outline:focus,
 .shr_button_blue_outline:active {
   background: transparent;
-  border: 1px solid #1e5083;
-  color: #1e5083;
+  border: 1px solid var(--shr_primary_blue_dk1);
+  color: var(--shr_primary_blue_dk1);
 }
 
 .shr_button_success_filled {
-  background: #29b32f;
-  border: 1px solid #29b32f;
-  color: white;
+  background: var(--shr_primary_green_default);
+  border: 1px solid var(--shr_primary_green_default);
+  color: var(--shr_primary_white);
 }
 
 .shr_button_success_filled:hover,
 .shr_button_success_filled:focus,
 .shr_button_success_filled:active {
-  background: #1e8323;
-  border: 1px solid #1e8323;
-  color: white;
+  background: var(--shr_primary_green_dk1);
+  border: 1px solid var(--shr_primary_green_dk1);
+  color: var(--shr_primary_white);
 }
 
 .shr_button_success_outline {
   background: transparent;
-  border: 1px solid #29b32f;
-  color: #29b32f;
+  border: 1px solid var(--shr_primary_green_default);
+  color: var(--shr_primary_green_default);
 }
 
 .shr_button_success_outline:hover,
 .shr_button_success_outline:focus,
 .shr_button_success_outline:active {
   background: transparent;
-  border: 1px solid #1e8323;
-  color: #1e8323;
+  border: 1px solid var(--shr_primary_green_dk1);
+  color: var(--shr_primary_green_dk1);
 }
 
 .shr_button_alarm_filled {
-  background: #c92b2b;
-  border: 1px solid #c92b2b;
-  color: white;
+  background: var(--shr_primary_red_default);
+  border: 1px solid var(--shr_primary_red_default);
+  color: var(--shr_primary_white);
 }
 
 .shr_button_alarm_filled:hover,
 .shr_button_alarm_filled:focus,
 .shr_button_alarm_filled:active {
-  background: #932020;
-  border: 1px solid #932020;
-  color: white;
+  background: var(--shr_primary_red_dk1);
+  border: 1px solid var(--shr_primary_red_dk1);
+  color: var(--shr_primary_white);
 }
 
 .shr_button_alarm_outline {
@@ -429,4 +483,97 @@ fieldset:disabled {
 .shr_spotcard_aligncenter > .shr_spotcard_image {
   text-align: center;
   right: initial;
+}
+
+/* Module Card */
+.shr_module_card_wrapper {
+  background: #f4fbf4;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.shr_module_card_wrapper > div {
+  padding: 1.875rem;
+}
+
+.shr_module_card_wrapper > div > div {
+  margin-bottom: 1.25rem;
+}
+
+.shr_module_card_heading {
+  /* Headings/Desktop/H4 (28) */
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.shr_module_card_paragraph {
+  /* Body/Small (15) */
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* or 150% */
+  /* Dark/Dark */
+  color: #454545;
+}
+
+.shr_module_card_button {
+  text-align: center;
+  background: #d8f1d9;
+  padding: 1.25rem;
+  cursor: pointer;
+  font-family: Avenir;
+  font-style: normal;
+}
+
+.shr_module_card_blue.shr_module_card_wrapper {
+  background: var(--shr_primary_blue_lt2);
+}
+
+.shr_module_card_blue.shr_module_card_button {
+  background: var(--shr_primary_blue_lt1);
+}
+
+.shr_module_card_green.shr_module_card_wrapper {
+  background: var(--shr_primary_green_lt2);
+}
+
+.shr_module_card_green.shr_module_card_button {
+  background: var(--shr_primary_green_lt1);
+}
+.shr_module_card_purple.shr_module_card_wrapper {
+  background: var(--shr_primary_purple_lt2);
+}
+
+.shr_module_card_purple.shr_module_card_button {
+  background: var(--shr_primary_purple_lt1);
+}
+
+.shr_module_card_orange.shr_module_card_wrapper {
+  background: var(--shr_primary_orange_lt2);
+}
+
+.shr_module_card_orange.shr_module_card_button {
+  background: var(--shr_primary_orange_lt1);
+}
+.shr_module_card_red.shr_module_card_wrapper {
+  background: var(--shr_primary_red_lt2);
+}
+
+.shr_module_card_red.shr_module_card_button {
+  background: var(--shr_primary_red_lt1);
+}
+
+.shr_module_card_yellow.shr_module_card_wrapper {
+  background: var(--shr_primary_yellow_lt2);
+}
+
+.shr_module_card_yellow.shr_module_card_button {
+  background: var(--shr_primary_yellow_lt1);
 }
