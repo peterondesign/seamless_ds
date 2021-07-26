@@ -60,23 +60,57 @@
                         Dropdown </p>
                     <div class="bd-example">
                         <div class="shr_simple_dropdown_wrapper">
-<div class="shr_simple_dropdown_dropdowncard">
-    <ul>
-        <li>Blog</li>
-        <li>E-books</li>
-        <li>Guides & Tutorials<img class="icon_dark.svg"></img></li>
-    </ul>
-</div>
-<div class="shr_simple_dropdown_dropdowncard">
-    <ul>
-        <li>Guide 1</li>
-        <li>Guide 2</li>
-        <li>Guide 3<img class="icon_dark.svg"></img></li>
-    </ul>
-</div>
+                            <div id="shr_simple_dropdown_dropdowncard"
+                                class="shr_simple_dropdown_dropdowncard shr_color_blue">
+                                <ul>
+                                    <li class="shr_simple_dropdown_dropdowncard_primary">Blog</li>
+                                    <li class="shr_simple_dropdown_dropdowncard_primary">E-books</li>
+                                    <li id="shr_dropdown_active"
+                                        class="shr_simple_dropdown_dropdowncard_primary shr_dropdown_active">Guides &
+                                        Tutorials<img src="arrow_right.svg" class="arrow_right"></img></li>
+                                    <li class="shr_simple_dropdown_dropdowncard_primary">Insights</li>
+                                    <li class="shr_simple_dropdown_dropdowncard_primary">FAQs</li>
+                                    <li class="shr_simple_dropdown_dropdowncard_primary">Terms and Conditions</li>
+                                    <li class="shr_simple_dropdown_dropdowncard_primary">Privacy policy</li>
+                                </ul>
+                            </div>
+                            <div id="shr_simple_dropdown_dropdowncard_secondary"
+                                class="shr_simple_dropdown_dropdowncard shr_simple_dropdown_dropdowncard_secondary">
+                                <ul>
+                                    <li>Guide 1</li>
+                                    <li>Guide 2</li>
+                                    <li>Guide 3<img class="icon_dark.svg"></img></li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
+
+                    <!-- Script Dropdown -->
+                    <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+
+                                                let selected_dropdowns = document.querySelectorAll('.shr_simple_dropdown_dropdowncard_primary');
+
+
+                        selected_dropdowns.forEach(function (selected_dropdown) {
+                         selected_dropdown.addEventListener('click', myFunction);
+                        })
+                        function myFunction() {
+                          document.getElementById("shr_simple_dropdown_dropdowncard_secondary").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(e) {
+                          if (!e.target.matches('.shr_simple_dropdown_dropdowncard_primary')) {
+                          let myDropdown = document.getElementById("shr_simple_dropdown_dropdowncard_primary");
+                            if (myDropdown.classList.contains('show')) {
+                              myDropdown.classList.remove('show');
+                            }
+                          }
+                        }
+                        </script>
 
                     <div class="highlight">
                         <pre class="chroma">
@@ -100,7 +134,7 @@
           </pre>
                     </div>
 
-                    
+
 
                     <h2 id="button_css">Module Card</h2>
                     <pre class="chroma">
