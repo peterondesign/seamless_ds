@@ -1,0 +1,246 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>SeamlessHR Design System</title>
+    <link href="" rel="shortcut icon" type="image/x-icon" />
+    <link href="bootstrap_css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap_css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="shr_style.css">
+</head>
+
+<body>
+    <div id="header_nav">
+        <div class="container-xxl my-md-4 bd-layout">
+            <aside id="sidebar"></aside>
+            <main class="bd-main order-1">
+                <div class="bd-intro ps-lg-4">
+                    <div class="
+                d-md-flex
+                flex-md-row-reverse
+                align-items-center
+                justify-content-between
+              ">
+                        <h1 class="bd-title" id="content">Dropdown</h1>
+                    </div>
+                    <p class="bd-lead">
+                        Use Bootstrap&rsquo;s custom button styles for actions in forms,
+                        dialogs, and more with support for multiple sizes, states, and more.
+                    </p>
+                </div>
+
+                <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <nav id="TableOfContents">
+                        <ul>
+                            <li><a href="#default_filled_buttons">Default filled buttons
+                                </a></li>
+                            <li>
+                                <a href="#large_outline_buttons">Large outline buttons
+                                </a>
+                            </li>
+                            <li><a href="#default_filled_buttons_with_icons">Default filled buttons with icons
+                                </a></li>
+                            <li><a href="#button_css">Button CSS
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="bd-content ps-lg-4">
+                    <h2 id="default_filled_buttons">Examples</h2>
+                    <p>
+                        Tables </p>
+                    <div class="bd-example">
+                        <div class="shr_table_default shr_table_bordered">
+                          <table>
+                            <tbody>
+                              <tr>
+                              <td>
+                                End-to-end HR
+                              </td>
+                              <td>
+                                SeamlessHR is an all-in-one software built with a full focus on HR. It's like an ERP for HR.
+                              </td>
+                              <td>
+                                Gusto works best if you're a small-sized business with US-only presence and you have a thing for expensive software. 
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                End-to-end HR
+                              </td>
+                              <td>
+                                SeamlessHR is an all-in-one software built with a full focus on HR. It's like an ERP for HR.
+                              </td>
+                              <td>
+                                Gusto works best if you're a small-sized business with US-only presence and you have a thing for expensive software. 
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Ease of use
+                              </td>
+                              <td>
+                                SeamlessHR is simple, intuitive; delights employees and makes HR look forward to their next tasks.
+                              </td>
+                              <td>
+                                Gusto is easy to use, but the price tag it comes with makes you feel like you lost more than you benefited.
+                              </td>
+                            </tr>
+                          </tbody>
+                          </table>
+                        </div>
+
+                    </div>
+
+                    <div class="highlight">
+                        <pre class="chroma">
+              <code class="language-html" data-lang="html">
+&lt;div class="shr_table_default"&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+  &lt;td&gt;
+    End-to-end HR
+  &lt;/td&gt;
+  &lt;td&gt;
+    SeamlessHR is an all-in-one software built with a full focus on HR. It's like an ERP for HR.
+  &lt;/td&gt;
+  &lt;td&gt;
+    Gusto works best if you're a small-sized business with US-only presence and you have a thing for expensive software. 
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;
+    End-to-end HR
+  &lt;/td&gt;
+  &lt;td&gt;
+    SeamlessHR is an all-in-one software built with a full focus on HR. It's like an ERP for HR.
+  &lt;/td&gt;
+  &lt;td&gt;
+    Gusto works best if you're a small-sized business with US-only presence and you have a thing for expensive software. 
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;
+    Ease of use
+  &lt;/td&gt;
+  &lt;td&gt;
+    SeamlessHR is simple, intuitive; delights employees and makes HR look forward to their next tasks.
+  &lt;/td&gt;
+  &lt;td&gt;
+    Gusto is easy to use, but the price tag it comes with makes you feel like you lost more than you benefited.
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+          </code>
+          </pre>
+                    </div>
+
+
+
+                    <h2 id="button_css">Table CSS</h2>
+                    <pre class="chroma">
+                  <code class="language-html" data-lang="html"><span class="p">
+                    /* Tables */
+.shr_table_bordered > table > tbody > tr {
+  border-bottom: 1px solid var(--shr_primary_blue_lt2);
+
+}
+.shr_table_default > table > tbody > tr > th,
+.shr_table_default > table > tbody > tr > td {
+  padding: 1.563rem 1.252rem;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  /* Dark/Dark */
+  color: var(--shr_primary_black_default);
+}
+.shr_table_default > table {
+  border: 1px solid var(--shr_primary_blue_lt3);
+  box-shadow: 0px 3px 7px rgba(19, 50, 82, 0.07);
+  border-radius: 10px;
+}
+.shr_table_default > table > tbody > tr > th {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.shr_table_default > table > tbody > tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.shr_table_default > table > tbody > tr > td {
+  width: 50%;
+  word-wrap: initial;
+}
+
+@media (max-width: 990px) {
+  .shr_table_default > table > tbody > tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .shr_table_default > table > tbody > tr > td {
+    width: 100%;
+    word-wrap: initial;
+  }
+}
+
+.shr_table_striped > table > tbody > tr:nth-child(even) {
+  background-color: var(--shr_primary_blue_lt3);
+}
+</span>              
+                  </code>
+              </pre>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            header_nav = document.getElementById("header_nav")
+            // document.getElementById("header_sidebar").innerHTML =
+            // this.responseText;
+            header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
+
+        }
+        xhttp.open("GET", "component_header_plus_sidebar.html");
+        xhttp.send();
+    </script>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+            sidebar = document.getElementById("sidebar")
+            // document.getElementById("header_sidebar").innerHTML =
+            // this.responseText;
+            sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
+
+        }
+        xhr.open("GET", "sidebar.html");
+        xhr.send();
+    </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="/docs/5.0/assets/js/docs.min.js"></script>
+    <script src="bootstrap_js/bootstrap.js"></script>
+
+</body>
+
+</html>
