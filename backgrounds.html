@@ -1,0 +1,204 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>SeamlessHR Design System</title>
+    <link href="" rel="shortcut icon" type="image/x-icon" />
+    <link href="bootstrap_css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap_css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="shr_style.css">
+</head>
+
+<body>
+    <div id="header_nav">
+        <div class="container-xxl my-md-4 bd-layout">
+            <aside id="sidebar"></aside>
+            <main class="bd-main order-1">
+                <div class="bd-intro ps-lg-4">
+                    <div class="
+                d-md-flex
+                flex-md-row-reverse
+                align-items-center
+                justify-content-between
+              ">
+                        <h1 class="bd-title" id="content">Backgrounds</h1>
+                    </div>
+                    <p class="bd-lead">
+                        Use Bootstrap&rsquo;s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+                    </p>
+                </div>
+
+                <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <nav id="TableOfContents">
+                        <ul>
+                            <li><a href="#default_filled_buttons">Default filled buttons
+                                </a></li>
+                            <li>
+                                <a href="#large_outline_buttons">Large outline buttons
+                                </a>
+                            </li>
+                            <li><a href="#default_filled_buttons_with_icons">Default filled buttons with icons
+                                </a></li>
+                            <li><a href="#button_css">Button CSS
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="bd-content ps-lg-4">
+                    <h2 id="default_filled_buttons">Examples</h2>
+                    <p>
+                        Wavy Background: Success to Primary </p>
+                    <div class="bd-example">
+                        <div class="shr_bg_success_to_primary">
+                            <svg id="shr_bg_wavy" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270">
+                                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white"
+                                    stroke-width="120" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <pre class="chroma">
+              <code class="language-html" data-lang="html">
+&lt;div class="shr_bg_success_to_primary"&gt;
+&lt;svg id="shr_bg_wavy" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270"&gt;
+    &lt;path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round"/&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+          </code>
+          </pre>
+                    </div>
+
+                    <p>
+                        Wavy Background: Primary to Sunlight </p>
+                    <div class="bd-example">
+                        <div class="shr_bg_primary_to_sunlight">
+                            <svg id="shr_bg_wavy" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270">
+                                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white"
+                                    stroke-width="120" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <pre class="chroma">
+              <code class="language-html" data-lang="html">
+&lt;div class="shr_bg_primary_to_sunlight"&gt;
+&lt;svg id="shr_bg_wavy" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270"&gt;
+    &lt;path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round"/&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+          </code>
+          </pre>
+                    </div>
+
+                    <p>
+                        Wavy Background: Primary </p>
+                    <div class="bd-example">
+                        <div class="shr_bg_primary_lt3">
+                            <svg id="shr_bg_wavy" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270">
+                                <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white"
+                                    stroke-width="120" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <pre class="chroma">
+              <code class="language-html" data-lang="html">
+&lt;div class="shr_bg_primary_lt3"&gt;
+&lt;svg id="shr_bg_wavy" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270"&gt;
+    &lt;path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round"/&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
+          </code>
+          </pre>
+                    </div>
+
+
+
+                    <h2 id="button_css">Background CSS</h2>
+                    <pre class="chroma">
+                  <code class="language-html" data-lang="html"><span class="p">
+/* Backgrounds */
+
+.shr_bg_primary_to_sunlight {
+    /* Gradients/Faded/PrimaryToSunlightFaded */
+    background: linear-gradient(262.47deg, #FEF9EB 11.14%, #E9F2FF 101.49%);
+}
+
+.shr_bg_primary_lt3 {
+    background: var(--shr_primary_blue_lt3);
+}
+
+.shr_bg_success_to_primary {
+    background: linear-gradient(267.56deg, #EFFBF2 -17.28%, #E9F2FF 70.25%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.shr_bg_success {
+    background: #F4FBF4;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.shr_bg_magenta_to_primary {
+    /* Gradients/Faded/MagentaToPrimaryFaded */
+    background: linear-gradient(236.96deg, #F9F3FA 28.56%, #ECF4FF 90.53%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.shr_bg_dark {
+    /* Dark/LT-3 */
+    background: #F5F5F5;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+</span>              
+                  </code>
+              </pre>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            header_nav = document.getElementById("header_nav")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
+
+        }
+        xhttp.open("GET", "component_header_plus_sidebar.html");
+        xhttp.send();
+    </script>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            sidebar = document.getElementById("sidebar")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
+
+        }
+        xhr.open("GET", "sidebar.html");
+        xhr.send();
+    </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="/docs/5.0/assets/js/docs.min.js"></script>
+    <script src="bootstrap_js/bootstrap.js"></script>
+
+</body>
+
+</html>

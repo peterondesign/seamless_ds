@@ -1,0 +1,238 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>SeamlessHR Design System</title>
+    <link href="" rel="shortcut icon" type="image/x-icon" />
+    <link href="bootstrap_css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap_css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="shr_style.css">
+</head>
+
+<body>
+    <div id="header_nav">
+        <div class="container-xxl my-md-4 bd-layout">
+            <aside id="sidebar"></aside>
+            <main class="bd-main order-1">
+                <div class="bd-intro ps-lg-4">
+                    <div class="
+                d-md-flex
+                flex-md-row-reverse
+                align-items-center
+                justify-content-between
+              ">
+                        <h1 class="bd-title" id="content">Tabs</h1>
+                    </div>
+                    <p class="bd-lead">
+                        Tabs are used to divide content into meaningful, related sections. Tabs allow users to focus on one specific view at a time while maintaining sight of all the relevant content options available. Each tab, when active, will reveal its own unique content.
+                    </p>
+                </div>
+
+                <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <nav id="TableOfContents">
+                        <ul>
+                            <li><a href="#default_filled_buttons">Avatar with images
+                                </a></li>
+                            <li>
+                                <a href="#large_outline_buttons">Avatar with text
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="bd-content ps-lg-4">
+                    <h2 id="default_filled_buttons">Examples</h2>
+                    <p>
+                        Horizontal tabs</p>
+
+                    <div class="shr_tabs_horizontal">
+                        <div class="shr_tab_active">
+                            General
+                        </div>
+                        <div>
+                            Setting up
+                        </div>
+                        <div>
+                            Getting started
+                        </div>
+                        <div>
+                            Pricing
+                        </div>
+                    </div>
+
+
+
+                    <div class="highlight">
+                        <pre class="chroma">
+<code class="language-html" data-lang="html">
+    &lt;div class="shr_tabs_horizontal"&gt;
+    &lt;div class="shr_tab_active"&gt;
+        General
+    &lt;/div&gt;
+    &lt;div&gt;
+        Setting up
+    &lt;/div&gt;
+    &lt;div&gt;
+        Getting started
+    &lt;/div&gt;
+    &lt;div&gt;
+        Pricing
+    &lt;/div&gt;
+&lt;/div&gt;
+          </code>
+          </pre>
+                    </div>
+
+                    <p>
+                        Vertical tabs</p>
+
+                    <div class="shr_tabs_vertical">
+                        <div class="shr_tab_active">
+                            General
+                        </div>
+                        <div>
+                            Setting up
+                        </div>
+                        <div>
+                            Getting started
+                        </div>
+                        <div>
+                            Pricing
+                        </div>
+                    </div>
+
+
+
+                    <div class="highlight">
+                        <pre class="chroma">
+<code class="language-html" data-lang="html">
+&lt;p&gt;
+    Vertical tabs&lt;/p&gt;
+
+&lt;div class="shr_tabs_vertical"&gt;
+    &lt;div class="shr_tab_active"&gt;
+        General
+    &lt;/div&gt;
+    &lt;div&gt;
+        Setting up
+    &lt;/div&gt;
+    &lt;div&gt;
+        Getting started
+    &lt;/div&gt;
+    &lt;div&gt;
+        Pricing
+    &lt;/div&gt;
+&lt;/div&gt;
+          </code>
+          </pre>
+                    </div>
+
+
+                    <h2 id="button_css">Tab CSS</h2>
+                    <pre class="chroma">
+                  <code class="language-html" data-lang="html"><span class="p">
+/* Tabs */
+
+.shr_tabs_horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.shr_tabs_horizontal>div {
+    color: var(--shr_primary_black_lt1);
+    border-bottom: 1px solid var(--shr_primary_blue_lt2);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.shr_tabs_horizontal>.shr_tab_active {
+    font-weight: 500;
+    color: var(--shr_primary_blue_default);
+    border-bottom: 4px solid var(--shr_primary_blue_default);
+}
+
+.shr_tabs_vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.shr_tabs_vertical>div {
+    color: var(--shr_primary_black_lt1);
+    border-right: 1px solid var(--shr_primary_blue_lt2);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.shr_tabs_vertical>.shr_tab_active {
+    font-weight: 500;
+    color: var(--shr_primary_blue_default);
+    border-right: 4px solid var(--shr_primary_blue_default);
+}
+
+.shr_tab_content {
+    animation: shr_fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
+
+
+/* Go from zero to full opacity */
+
+@keyframes shr_fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</span>              
+                  </code>
+              </pre>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            header_nav = document.getElementById("header_nav")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
+
+        }
+        xhttp.open("GET", "component_header_plus_sidebar.html");
+        xhttp.send();
+    </script>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            sidebar = document.getElementById("sidebar")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
+
+        }
+        xhr.open("GET", "sidebar.html");
+        xhr.send();
+    </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="/docs/5.0/assets/js/docs.min.js"></script>
+    <script src="bootstrap_js/bootstrap.js"></script>
+
+</body>
+
+</html>

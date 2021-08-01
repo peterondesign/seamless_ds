@@ -1,0 +1,223 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>SeamlessHR Design System</title>
+    <link href="" rel="shortcut icon" type="image/x-icon" />
+    <link href="bootstrap_css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap_css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="shr_style.css">
+</head>
+
+<body>
+    <div id="header_nav">
+        <div class="container-xxl my-md-4 bd-layout">
+            <aside id="sidebar"></aside>
+            <main class="bd-main order-1">
+                <div class="bd-intro ps-lg-4">
+                    <div class="
+                d-md-flex
+                flex-md-row-reverse
+                align-items-center
+                justify-content-between
+              ">
+                        <h1 class="bd-title" id="content">Progress Bar</h1>
+                    </div>
+                    <p class="bd-lead">
+                        Use Bootstrap&rsquo;s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+                    </p>
+                </div>
+
+                <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <nav id="TableOfContents">
+                        <ul>
+                            <li><a href="#default_filled_buttons">Default filled buttons
+                                </a></li>
+                            <li>
+                                <a href="#large_outline_buttons">Large outline buttons
+                                </a>
+                            </li>
+                            <li><a href="#default_filled_buttons_with_icons">Default filled buttons with icons
+                                </a></li>
+                            <li><a href="#button_css">Button CSS
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="bd-content ps-lg-4">
+                    <h2 id="default_filled_buttons">Examples</h2>
+                    <p>
+                        Progress Bar</p>
+                    <div class="bd-example">
+                        <div class="shr_progress_bar">
+                            <div class="shr_progress_bar_info">
+                                <div class="shr_progress_bar_info_action">
+                                    Uploading image
+                                </div>
+                                <div class="shr_progress_bar_info_status">
+                                    60%
+                                </div>
+                            </div>
+                            <div class="shr_progress_bar_info">
+                                <div class="shr_progress_bar_icon">
+                                    <div class="shr_progress_bar_icon_completion">
+                                        <span>Loading</span>
+                                    </div>
+                                </div>
+                                <div class="shr_progress_bar_info_status">
+                                    <svg class="shr_progress_bar_close_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 2.115L18.885 0L10.5 8.385L2.115 0L0 2.115L8.385 10.5L0 18.885L2.115 21L10.5 12.615L18.885 21L21 18.885L12.615 10.5L21 2.115Z" fill="#9DBCDC"/>
+                                        </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <pre class="chroma">
+              <code class="language-html" data-lang="html">
+&lt;div class="shr_progress_bar"&gt;
+&lt;div class="shr_progress_bar_info"&gt;
+&lt;div class="shr_progress_bar_info_action"&gt;
+    Uploading image
+&lt;/div&gt;
+&lt;div class="shr_progress_bar_info_status"&gt;
+    60%
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shr_progress_bar_info"&gt;
+&lt;div class="shr_progress_bar_icon"&gt;
+    &lt;div class="shr_progress_bar_icon_completion"&gt;
+        &lt;span&gt;Loading&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="shr_progress_bar_info_status"&gt;
+    &lt;svg class="shr_progress_bar_close_icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;path d="M21 2.115L18.885 0L10.5 8.385L2.115 0L0 2.115L8.385 10.5L0 18.885L2.115 21L10.5 12.615L18.885 21L21 18.885L12.615 10.5L21 2.115Z" fill="#9DBCDC"/&gt;
+        &lt;/svg&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+          </code>
+          </pre>
+                    </div>
+
+
+                    <h2 id="button_css">Progress Bar</h2>
+                    <pre class="chroma">
+                  <code class="language-html" data-lang="html"><span class="p">
+/* Progress Bar */
+
+.shr_progress_bar_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shr_progress_bar_info:not(:last-child) {
+    margin-bottom: 1.875rem;
+}
+
+.shr_progress_bar_info_action {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height, or 150% */
+    font-feature-settings: 'liga' off;
+    /* Dark/Default */
+    color: #454545;
+}
+
+.shr_progress_bar_info_status {
+    /* Body/Paragraph (18)/Regular */
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height, or 150% */
+    text-align: right;
+    font-feature-settings: 'liga' off;
+    /* Primary/Default */
+    color: #296DB3;
+}
+
+.shr_progress_bar_icon {
+    background: var(--shr_primary_blue_lt3);
+    border-radius: 0.5rem;
+    width: 100%;
+    z-index: 0;
+}
+
+.shr_progress_bar_icon_completion {
+    background: var(--shr_primary_blue_default);
+    border-radius: 0.5rem;
+    width: 60%;
+    z-index: 1;
+    color: white;
+}
+
+.shr_progress_bar_icon_completion>span {
+    padding: 0 0.525rem;
+}
+
+@media(min-width:990px) {
+    .shr_progress_bar_close_icon {
+        padding-left: 0.225rem;
+        cursor: pointer;
+    }
+}         
+</span>              
+                  </code>
+              </pre>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            header_nav = document.getElementById("header_nav")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
+
+        }
+        xhttp.open("GET", "component_header_plus_sidebar.html");
+        xhttp.send();
+    </script>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            sidebar = document.getElementById("sidebar")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
+
+        }
+        xhr.open("GET", "sidebar.html");
+        xhr.send();
+    </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="/docs/5.0/assets/js/docs.min.js"></script>
+    <script src="bootstrap_js/bootstrap.js"></script>
+
+</body>
+
+</html>

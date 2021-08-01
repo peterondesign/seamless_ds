@@ -1,0 +1,421 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>SeamlessHR Design System</title>
+    <link href="" rel="shortcut icon" type="image/x-icon" />
+    <link href="bootstrap_css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap_css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="shr_style.css">
+</head>
+
+<body>
+    <div id="header_nav">
+        <div class="container-xxl my-md-4 bd-layout">
+            <aside id="sidebar"></aside>
+            <main class="bd-main order-1">
+                <div class="bd-intro ps-lg-4">
+                    <div class="
+                d-md-flex
+                flex-md-row-reverse
+                align-items-center
+                justify-content-between
+              ">
+                        <h1 class="bd-title" id="content">Modals</h1>
+                    </div>
+                    <p class="bd-lead">
+                        Use Bootstrap&rsquo;s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+                    </p>
+                </div>
+
+                <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <nav id="TableOfContents">
+                        <ul>
+                            <li><a href="#default_filled_buttons">Default filled buttons
+                                </a></li>
+                            <li>
+                                <a href="#large_outline_buttons">Large outline buttons
+                                </a>
+                            </li>
+                            <li><a href="#default_filled_buttons_with_icons">Default filled buttons with icons
+                                </a></li>
+                            <li><a href="#button_css">Button CSS
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="bd-content ps-lg-4">
+                    <h2 id="default_filled_buttons">Examples</h2>
+                    <p>
+                        Wavy Background: Success to Primary </p>
+                    <div class="bd-example">
+                        <!-- Trigger/Open The Modal -->
+                        <button id="shr_trigger_default_modal" class="shr_button_defaultsize shr_button_blue_filled" style="display: {{trigger_button_display}}" href="#">Open Modal</button>
+                        <!-- The Modal -->
+                        <div id="shr_default_modal" class="shr_default_modal">
+
+                            <!-- Modal content -->
+                            <div class="shr_default_modal_content shr_modal_full_screen">
+                                <div>
+                                    <div class="shr_default_modal_header">
+                                        <div>
+                                            <p class="headings_desktop_h6">{{modal_title}}</p>
+                                        </div>
+                                        <div><span class="shr_default_modal_close">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.9993 1L1 13.9993" stroke="#878787" stroke-width="1.6" stroke-linecap="round"/>
+                    <path d="M1.00074 1L14 13.9993" stroke="#878787" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                    </span></div>
+                                    </div>
+                                    <hr class="shr_default_modal_header_line"></hr>
+                                </div>
+
+                                <div>
+                                    <p class="body_paragraph_18">{{modal_text_content}}</p>
+                                </div>
+
+                                <div class="shr_default_modal_button_group">
+                                    <div class="shr_default_modal_primary_button">
+                                        <a href="{{primary_url.url}}" style="color: white">{{primary_button_text}}</a>
+                                    </div>
+                                    <div class="shr_default_modal_secondary_button" id="{{sec_button_function}}">
+                                        <a href="{{secondary_url.url}}" style="color: #296DB3">{{secondary_button_text}}</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <pre class="chroma">
+              <code class="language-html" data-lang="html">
+&lt;!-- Trigger/Open The Modal --&gt;
+&lt;button id="shr_trigger_default_modal" class="shr_button_defaultsize shr_button_blue_filled" style="display: {{trigger_button_display}}" href="#"&gt;Open Modal&lt;/button&gt;
+&lt;!-- The Modal --&gt;
+&lt;div id="shr_default_modal" class="shr_default_modal"&gt;
+
+    &lt;!-- Modal content --&gt;
+    &lt;div class="shr_default_modal_content shr_modal_full_screen"&gt;
+        &lt;div&gt;
+            &lt;div class="shr_default_modal_header"&gt;
+                &lt;div&gt;
+                    &lt;p class="headings_desktop_h6"&gt;{{modal_title}}&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div&gt;&lt;span class="shr_default_modal_close"&gt;
+&lt;svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;
+&lt;path d="M13.9993 1L1 13.9993" stroke="#878787" stroke-width="1.6" stroke-linecap="round"/&gt;
+&lt;path d="M1.00074 1L14 13.9993" stroke="#878787" stroke-width="1.6" stroke-linecap="round"/&gt;
+&lt;/svg&gt;
+&lt;/span&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;hr class="shr_default_modal_header_line"&gt;&lt;/hr&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+            &lt;p class="body_paragraph_18"&gt;{{modal_text_content}}&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class="shr_default_modal_button_group"&gt;
+            &lt;div class="shr_default_modal_primary_button"&gt;
+                &lt;a href="{{primary_url.url}}" style="color: white"&gt;{{primary_button_text}}&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="shr_default_modal_secondary_button" id="{{sec_button_function}}"&gt;
+                &lt;a href="{{secondary_url.url}}" style="color: #296DB3"&gt;{{secondary_button_text}}&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- SHR Modal Script --&gt;
+&lt;script&gt;
+    // Get the modal
+    let shr_default_modal = document.getElementById("shr_default_modal");
+
+    // Get the button that opens the modal
+    let shr_trigger_default_modal = document.getElementById("shr_trigger_default_modal");
+
+    // Get the &lt;span&gt; element that closes the modal
+    let shr_default_modal_close = document.getElementsByClassName("shr_default_modal_close")[0];
+    let shr_default_button_close = document.getElementById("shr_default_button_close");
+
+
+    // When the user clicks the button, open the modal 
+    shr_trigger_default_modal.onclick = function() {
+        shr_default_modal.style.display = "block";
+    }
+
+    // When the user clicks on &lt;span&gt; (x), close the modal
+    shr_default_modal_close.onclick = function() {
+        shr_default_modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == shr_default_modal) {
+            shr_default_modal.style.display = "none";
+        }
+    }
+&lt;/script&gt;
+          </code>
+          </pre>
+                    </div>
+
+
+                    <h2 id="button_css">Modal CSS</h2>
+                    <pre class="chroma">
+                  <code class="language-html" data-lang="html"><span class="p">
+/* Modal */
+
+.shr_default_modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10000 !important;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Modal Content */
+
+
+/* Add Animation */
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.shr_default_modal_content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+.shr_modal_default_size {
+    width: 30%;
+}
+
+.shr_modal_large_size {
+    width: 50%;
+}
+
+.shr_modal_full_screen {
+    width: 70%;
+}
+
+.shr_default_modal_content>div {
+    padding-bottom: 30px;
+}
+
+.shr_default_modal_content>div:last-child {
+    padding-bottom: 0px;
+}
+
+
+/* The Close Button */
+
+.shr_default_modal_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.shr_default_modal_close:hover,
+.shr_default_modal_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.headings_desktop_h6 {
+    /* Headings/Desktop/H6 (20) */
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    /* Text Color / Primary Dark */
+    color: #454545;
+    margin: 0px
+}
+
+.body_paragraph_18 {
+    /* Body/Paragraph (18)/Regular */
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 150% */
+    font-feature-settings: 'liga' off;
+    /* Dark/Dark */
+    color: #454545;
+    margin: 0px
+}
+
+.shr_default_modal_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shr_default_modal_header_line {
+    /* Blue/LT2 */
+    border: .7px solid #D8E4F1;
+}
+
+.shr_default_modal_primary_button,
+.shr_default_modal_secondary_button {
+    /* Blue / Blue */
+    border: 1px solid #296DB3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 27px;
+    /* identical to box height, or 180% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 8px 25px;
+    width: fit-content;
+    margin-right: 30px;
+}
+
+.shr_default_modal_button_group {
+    display: flex;
+    flex-direction: row;
+}
+
+.shr_default_modal_primary_button {
+    /* Blue/primary */
+    background: #296DB3;
+    color: #FFFFFF;
+}
+
+.shr_default_modal_secondary_button {
+    /* Primary/Default */
+    color: #296DB3;
+    border: 1px solid #296DB3;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+</span>              
+                  </code>
+              </pre>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <!-- SHR Modal Script -->
+    <script>
+        // Get the modal
+        let shr_default_modal = document.getElementById("shr_default_modal");
+
+        // Get the button that opens the modal
+        let shr_trigger_default_modal = document.getElementById("shr_trigger_default_modal");
+
+        // Get the <span> element that closes the modal
+        let shr_default_modal_close = document.getElementsByClassName("shr_default_modal_close")[0];
+        let shr_default_button_close = document.getElementById("shr_default_button_close");
+
+
+        // When the user clicks the button, open the modal 
+        shr_trigger_default_modal.onclick = function() {
+            shr_default_modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        shr_default_modal_close.onclick = function() {
+            shr_default_modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == shr_default_modal) {
+                shr_default_modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+    <script>
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            header_nav = document.getElementById("header_nav")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
+
+        }
+        xhttp.open("GET", "component_header_plus_sidebar.html");
+        xhttp.send();
+    </script>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            sidebar = document.getElementById("sidebar")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
+
+        }
+        xhr.open("GET", "sidebar.html");
+        xhr.send();
+    </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="/docs/5.0/assets/js/docs.min.js"></script>
+    <script src="bootstrap_js/bootstrap.js"></script>
+
+</body>
+
+</html>
