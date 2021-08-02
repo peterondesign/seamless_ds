@@ -31,8 +31,7 @@
                         <h1 class="bd-title" id="content">Dropdown</h1>
                     </div>
                     <p class="bd-lead">
-                        Use Bootstrap&rsquo;s custom button styles for actions in forms,
-                        dialogs, and more with support for multiple sizes, states, and more.
+                        Tables display tabular data in a basic grid composed of cells, columns, and rows. This format makes it easy for users to scan and compare large amounts of data.
                     </p>
                 </div>
 
@@ -60,43 +59,43 @@
                         Tables </p>
                     <div class="bd-example">
                         <div class="shr_table_default shr_table_bordered">
-                          <table>
-                            <tbody>
-                              <tr>
-                              <td>
-                                End-to-end HR
-                              </td>
-                              <td>
-                                SeamlessHR is an all-in-one software built with a full focus on HR. It's like an ERP for HR.
-                              </td>
-                              <td>
-                                Gusto works best if you're a small-sized business with US-only presence and you have a thing for expensive software. 
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                End-to-end HR
-                              </td>
-                              <td>
-                                SeamlessHR is an all-in-one software built with a full focus on HR. It's like an ERP for HR.
-                              </td>
-                              <td>
-                                Gusto works best if you're a small-sized business with US-only presence and you have a thing for expensive software. 
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                Ease of use
-                              </td>
-                              <td>
-                                SeamlessHR is simple, intuitive; delights employees and makes HR look forward to their next tasks.
-                              </td>
-                              <td>
-                                Gusto is easy to use, but the price tag it comes with makes you feel like you lost more than you benefited.
-                              </td>
-                            </tr>
-                          </tbody>
-                          </table>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            End-to-end HR
+                                        </td>
+                                        <td>
+                                            SeamlessHR is an all-in-one software built with a full focus on HR. It's like an ERP for HR.
+                                        </td>
+                                        <td>
+                                            Gusto works best if you're a small-sized business with US-only presence and you have a thing for expensive software.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            End-to-end HR
+                                        </td>
+                                        <td>
+                                            SeamlessHR is an all-in-one software built with a full focus on HR. It's like an ERP for HR.
+                                        </td>
+                                        <td>
+                                            Gusto works best if you're a small-sized business with US-only presence and you have a thing for expensive software.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ease of use
+                                        </td>
+                                        <td>
+                                            SeamlessHR is simple, intuitive; delights employees and makes HR look forward to their next tasks.
+                                        </td>
+                                        <td>
+                                            Gusto is easy to use, but the price tag it comes with makes you feel like you lost more than you benefited.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
 
                     </div>
@@ -212,10 +211,10 @@
     </div>
     <script>
         const xhttp = new XMLHttpRequest();
-        xhttp.onload = function () {
+        xhttp.onload = function() {
             header_nav = document.getElementById("header_nav")
-            // document.getElementById("header_sidebar").innerHTML =
-            // this.responseText;
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
             header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
 
         }
@@ -224,19 +223,18 @@
     </script>
     <script>
         const xhr = new XMLHttpRequest();
-        xhr.onload = function () {
+        xhr.onload = function() {
             sidebar = document.getElementById("sidebar")
-            // document.getElementById("header_sidebar").innerHTML =
-            // this.responseText;
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
             sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
 
         }
         xhr.open("GET", "sidebar.html");
         xhr.send();
     </script>
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="/docs/5.0/assets/js/docs.min.js"></script>
     <script src="bootstrap_js/bootstrap.js"></script>

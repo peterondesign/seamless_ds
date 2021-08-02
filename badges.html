@@ -31,7 +31,7 @@
                         <h1 class="bd-title" id="content">Badges</h1>
                     </div>
                     <p class="bd-lead">
-                        Use Bootstrap&rsquo;s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+                        Badges highlight metadata of objects, the kind of information that always needs some context and isn’t useful on its own. For example, they can be used to indicate an issue’s status, a member’s role, or if a branch is protected.
                     </p>
                 </div>
 
@@ -55,27 +55,30 @@
 
                 <div class="bd-content ps-lg-4">
                     <h2 id="default_filled_buttons">Examples</h2>
+
                     <p>
                         Badges </p>
                     <div class="bd-example">
                         <div class="shr_badge_wrapper" id="shr_badge_wrapper">
-
-
+                            <div class="shr_badge shr_badge_orange" style="margin-right: 10px; margin-bottom: 15px;"><span>Awaiting response</span></div>
+                            <div class="shr_badge shr_badge_green" style="margin-right: 10px; margin-bottom: 15px;"><span>Approved</span></div>
+                            <div class="shr_badge shr_badge_purple" style="margin-right: 10px; margin-bottom: 15px;"><span>Mark</span></div>
+                            <div class="shr_badge shr_badge_red" style="margin-right: 10px; margin-bottom: 15px;"><span>Rejected</span></div>
+                            <div class="shr_badge shr_badge_dark" style="margin-right: 10px; margin-bottom: 15px;"><span>Information</span></div>
+                            <div class="shr_badge shr_badge_sunlight" style="margin-right: 10px; margin-bottom: 15px;"><span>99+</span></div>
                         </div>
-
-                        <script>
-                            let badges = document.getElementById('shr_badge_wrapper'),
-                                div_creator = document.createElement('div'),
-                                clone;
-                            ['Awaiting response', 'Approved', 'Mark', 'Rejected', 'Information', '99+'].forEach(function(badge_type, index) {
-                                clone = div_creator.cloneNode();
-                                clone.innerHTML = '<div class="shr_badge shr_badge_blue" style="margin-right: 10px; margin-bottom: 15px;"><span>' + badge_type + '</span></div>';
-                                badges.appendChild(clone);
-                            });
-                        </script>
-
-
                     </div>
+
+                    <script>
+                        let badges = document.getElementById('shr_badge_wrapper'),
+                            div_creator = document.createElement('div'),
+                            clone;
+                        ['Awaiting response', 'Approved', 'Mark', 'Rejected', 'Information', '99+'].forEach(function(badge_type, index) {
+                            clone = div_creator.cloneNode();
+                            clone.innerHTML = '<div class="shr_badge shr_badge_blue" style="margin-right: 10px; margin-bottom: 15px;"><span>' + badge_type + '</span></div>';
+                            badges.appendChild(clone);
+                        });
+                    </script>
 
                     <div class="highlight">
                         <pre class="chroma">

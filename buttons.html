@@ -1,0 +1,386 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>SeamlessHR Design System</title>
+    <link href="" rel="shortcut icon" type="image/x-icon" />
+    <link href="bootstrap_css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap_css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="shr_style.css">
+</head>
+
+<body>
+    <div id="header_nav">
+        <div class="container-xxl my-md-4 bd-layout">
+            <aside id="sidebar"></aside>
+            <main class="bd-main order-1">
+                <div class="bd-intro ps-lg-4">
+                    <div class="
+              d-md-flex
+              flex-md-row-reverse
+              align-items-center
+              justify-content-between
+            ">
+                        <h1 class="bd-title" id="content">Buttons</h1>
+                    </div>
+                    <p class="bd-lead">
+                        Buttons execute an action, either in the background or foreground of an experience. Buttons express what action will occur either by text, icon, or both
+                    </p>
+                </div>
+
+                <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+                    <nav id="TableOfContents">
+                        <ul>
+                            <li><a href="#default_filled_buttons">Default filled buttons
+                </a></li>
+                            <li>
+                                <a href="#large_outline_buttons">Large outline buttons
+                </a>
+                            </li>
+                            <li><a href="#default_filled_buttons_with_icons">Default filled buttons with icons
+                </a></li>
+                            <li><a href="#button_css">Button CSS
+                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="bd-content ps-lg-4">
+                    <h2 id="default_filled_buttons">Examples</h2>
+                    <p>
+                        Default filled buttons
+                    </p>
+                    <div class="bd-example">
+                        <button type="button" class="shr_button_defaultsize shr_button_blue_filled">Primary</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_success_filled">Success</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_alarm_filled"><img src="icon.svg"
+                class="shr_button_icon"></img>Alarm</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_dark_filled">Dark</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_amber_filled">Amber</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_white_filled">White</button>
+                    </div>
+                    <div class="highlight">
+                        <pre class="chroma"><code class="language-html" data-lang="html">
+&lt;button type="button" class="shr_button_defaultsize shr_button_blue_filled"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="shr_button_defaultsize shr_button_success_filled"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="shr_button_defaultsize shr_button_alarm_filled"&gt;&lt;img src="icon.svg" class="shr_button_icon"&gt;&lt;/img&gt;Alarm&lt;/button&gt;
+&lt;button type="button" class="shr_button_defaultsize shr_button_dark_filled"&gt;Dark&lt;/button&gt;
+&lt;button type="button" class="shr_button_defaultsize shr_button_amber_filled"&gt;Amber&lt;/button&gt;
+&lt;button type="button" class="shr_button_defaultsize shr_button_white_filled"&gt;White&lt;/button&gt;
+
+</code>
+</pre>
+                    </div>
+
+                    <p id="large_outline_buttons">
+                        Large outline buttons
+                    </p>
+                    <div class="bd-example">
+                        <button type="button" class="shr_button_largesize shr_button_blue_outline">Primary</button>
+                        <button type="button" class="shr_button_largesize shr_button_success_outline">Success</button>
+                        <button type="button" class="shr_button_largesize shr_button_alarm_outline">Alarm</button>
+                        <button type="button" class="shr_button_largesize shr_button_dark_outline">Dark</button>
+                        <button type="button" class="shr_button_largesize shr_button_amber_outline">Amber</button>
+                        <button type="button" class="shr_button_largesize shr_button_white_outline">White</button>
+                    </div>
+                    <div class="highlight">
+                        <pre class="chroma"><code class="language-html" data-lang="html">
+&lt;button type=&#34;button&#34; class=&#34;shr_button_largesize shr_button_blue_outline&#34;&gt;Primary&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_largesize shr_button_success_outline&#34;&gt;Success&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_largesize shr_button_alarm_outline&#34;&gt;Alarm&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_largesize shr_button_dark_outline&#34;&gt;Dark&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_largesize shr_button_amber_outline&#34;&gt;Amber&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_largesize shr_button_white_outline&#34;&gt;White&lt;/button&gt;
+</code></pre>
+                    </div>
+
+                    <p id="default_filled_buttons_with_icons">
+                        Default filled buttons with icons
+                    </p>
+                    <div class="bd-example">
+                        <button type="button" class="shr_button_defaultsize shr_button_blue_filled"><img src="icon.svg"
+                class="shr_button_icon"></img>Primary</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_success_filled"><img src="icon.svg"
+                class="shr_button_icon"></img>Success</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_alarm_filled"><img src="icon.svg"
+                class="shr_button_icon"></img>Alarm</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_dark_filled"><img src="icon.svg"
+                class="shr_button_icon"></img>Dark</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_amber_filled"><img src="icon.svg"
+                class="shr_button_icon"></img>Amber</button>
+                        <button type="button" class="shr_button_defaultsize shr_button_white_filled"><img src="icon_dark.svg"
+                class="shr_button_icon"></img>White</button>
+                    </div>
+                    <div class="highlight">
+                        <pre class="chroma"><code class="language-html" data-lang="html">
+button type=&#34;button&#34; class=&#34;shr_button_defaultsize shr_button_blue_filled&#34;&gt;&lt;img src=&#34;icon.svg&#34; class=&#34;shr_button_icon&#34;&gt;&lt;/img&gt;Primary&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_defaultsize shr_button_success_filled&#34;&gt;&lt;img src=&#34;icon.svg&#34;class=&#34;shr_button_icon&#34;&gt;&lt;/img&gt;Success&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_defaultsize shr_button_alarm_filled&#34;&gt;&lt;img src=&#34;icon.svg&#34; class=&#34;shr_button_icon&#34;&gt;&lt;/img&gt;Alarm&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_defaultsize shr_button_dark_filled&#34;&gt;&lt;img src=&#34;icon.svg&#34; class=&#34;shr_button_icon&#34;&gt;&lt;/img&gt;Dark&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_defaultsize shr_button_amber_filled&#34;&gt;&lt;img src=&#34;icon.svg&#34; class=&#34;shr_button_icon&#34;&gt;&lt;/img&gt;Amber&lt;/button&gt;&#10;&lt;button type=&#34;button&#34; class=&#34;shr_button_defaultsize shr_button_white_filled&#34;&gt;&lt;img src=&#34;icon_dark.svg&#34; class=&#34;shr_button_icon&#34;&gt;&lt;/img&gt;White&lt;/button&gt;
+          </code>
+          </pre>
+                    </div>
+
+                    <h2 id="button_css">Button CSS</h2>
+                    <pre class="chroma">
+                <code class="language-html" data-lang="html"><span class="p">
+/* Buttons */
+
+.shr_button_defaultsize,
+.shr_button_largesize {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-right: 15px;
+}
+@media (max-width: 990px) {
+  .shr_button_defaultsize,
+  .shr_button_largesize {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .shr_button_defaultsize,
+  .shr_button_largesize {
+    transition: none;
+  }
+}
+
+.shr_button_defaultsize:disabled,
+.shr_button_largesize:disabled,
+.shr_button_defaultsize:disabled,
+.shr_button_largesize:disabled,
+fieldset:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.shr_button_defaultsize {
+  font-family: Avenir;
+  padding: 7px 25px;
+}
+
+.shr_button_largesize {
+  font-family: Avenir;
+  padding: 13px 36px;
+}
+
+.shr_button_blue_filled {
+  background: #296db3;
+  border: 1px solid #296db3;
+  color: white;
+}
+
+.shr_button_blue_outline {
+  background: transparent;
+  border: 1px solid #296db3;
+  color: #296db3;
+}
+
+.shr_button_blue_outline:hover,
+.shr_button_blue_outline:focus,
+.shr_button_blue_outline:active {
+  background: transparent;
+  border: 1px solid #1e5083;
+  color: #1e5083;
+}
+
+.shr_button_success_filled {
+  background: #29b32f;
+  border: 1px solid #29b32f;
+  color: white;
+}
+
+.shr_button_success_filled:hover,
+.shr_button_success_filled:focus,
+.shr_button_success_filled:active {
+  background: #1e8323;
+  border: 1px solid #1e8323;
+  color: white;
+}
+
+.shr_button_success_outline {
+  background: transparent;
+  border: 1px solid #29b32f;
+  color: #29b32f;
+}
+
+.shr_button_success_outline:hover,
+.shr_button_success_outline:focus,
+.shr_button_success_outline:active {
+  background: transparent;
+  border: 1px solid #1e8323;
+  color: #1e8323;
+}
+
+.shr_button_alarm_filled {
+  background: #c92b2b;
+  border: 1px solid #c92b2b;
+  color: white;
+}
+
+.shr_button_alarm_filled:hover,
+.shr_button_alarm_filled:focus,
+.shr_button_alarm_filled:active {
+  background: #932020;
+  border: 1px solid #932020;
+  color: white;
+}
+
+.shr_button_alarm_outline {
+    background: transparent;
+    border: 1px solid #c92b2b;
+    color: #c92b2b;
+  }
+  
+  .shr_button_alarm_outline:hover,
+  .shr_button_alarm_outline:focus,
+  .shr_button_alarm_outline:active {
+    background: transparent;
+    border: 1px solid #932020;
+    color: #932020;
+  }
+
+.shr_button_dark_filled {
+  background: #454545;
+  border: 1px solid #454545;
+  color: white;
+}
+
+.shr_button_dark_filled:hover,
+.shr_button_dark_filled:focus,
+.shr_button_dark_filled:active {
+  background: #333333;
+  border: 1px solid #333333;
+  color: white;
+}
+
+.shr_button_dark_outline {
+    background: transparent;
+    border: 1px solid #454545;
+    color: #454545;
+  }
+  
+  .shr_button_dark_outline:hover,
+  .shr_button_dark_outline:focus,
+  .shr_button_dark_outline:active {
+    background: transparent;
+    border: 1px solid #333333;
+    color: #454545;
+  }
+  
+
+.shr_button_amber_filled {
+  background: #f79b24;
+  border: 1px solid #f79b24;
+  color: white;
+}
+
+.shr_button_amber_filled:hover,
+.shr_button_amber_filled:focus,
+.shr_button_amber_filled:active {
+  background: #d07908;
+  border: 1px solid #d07908;
+  color: white;
+}
+
+.shr_button_amber_outline {
+    background: transparent;
+    border: 1px solid #f79b24;
+    color: #f79b24;
+  }
+  
+  .shr_button_amber_outline:hover,
+  .shr_button_amber_outline:focus,
+  .shr_button_amber_outline:active {
+    background: transparent;
+    border: 1px solid #d07908;
+    color: #d07908;
+  }
+
+.shr_button_white_filled {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #454545;
+}
+
+.shr_button_white_filled:hover,
+.shr_button_white_filled:focus,
+.shr_button_white_filled:active {
+  background: #f8f8f6;
+  border: 1px solid #f8f8f6;
+  color: #454545;
+}
+
+.shr_button_white_outline {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #454545;
+  }
+  
+  .shr_button_white_outline:hover,
+  .shr_button_white_outline:focus,
+  .shr_button_white_outline:active {
+    background: transparent;
+    border: 1px solid #f8f8f6;
+    color: #333333;
+  }
+
+.shr_button_icon {
+  margin-right: 10px;
+}
+
+                </code>
+            </pre>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            header_nav = document.getElementById("header_nav")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
+
+        }
+        xhttp.open("GET", "component_header_plus_sidebar.html");
+        xhttp.send();
+    </script>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            sidebar = document.getElementById("sidebar")
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
+            sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
+
+        }
+        xhr.open("GET", "sidebar.html");
+        xhr.send();
+    </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="/docs/5.0/assets/js/docs.min.js"></script>
+    <script src="bootstrap_js/bootstrap.js"></script>
+
+</body>
+
+</html>

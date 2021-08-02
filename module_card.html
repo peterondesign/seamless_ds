@@ -31,8 +31,7 @@
                         <h1 class="bd-title" id="content">Module Card</h1>
                     </div>
                     <p class="bd-lead">
-                        Use Bootstrap&rsquo;s custom button styles for actions in forms,
-                        dialogs, and more with support for multiple sizes, states, and more.
+                        A module card positions text in a manner that demonstrates their intended hierarchy.
                     </p>
                 </div>
 
@@ -65,9 +64,7 @@
                                     Recruitment Management
                                 </div>
                                 <div class="shr_module_card_paragraph">
-                                    You can choose to add more options to your core or premium plan. Or choose to
-                                    purchase
-                                    these add-ons as standalone
+                                    You can choose to add more options to your core or premium plan. Or choose to purchase these add-ons as standalone
                                 </div>
                             </div>
                             <div class="shr_module_card_button shr_module_card_blue">
@@ -99,7 +96,7 @@
           </pre>
                     </div>
 
-                    
+
 
                     <h2 id="button_css">Module Card</h2>
                     <pre class="chroma">
@@ -206,10 +203,10 @@
     </div>
     <script>
         const xhttp = new XMLHttpRequest();
-        xhttp.onload = function () {
+        xhttp.onload = function() {
             header_nav = document.getElementById("header_nav")
-            // document.getElementById("header_sidebar").innerHTML =
-            // this.responseText;
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
             header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
 
         }
@@ -218,19 +215,18 @@
     </script>
     <script>
         const xhr = new XMLHttpRequest();
-        xhr.onload = function () {
+        xhr.onload = function() {
             sidebar = document.getElementById("sidebar")
-            // document.getElementById("header_sidebar").innerHTML =
-            // this.responseText;
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
             sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
 
         }
         xhr.open("GET", "sidebar.html");
         xhr.send();
     </script>
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="/docs/5.0/assets/js/docs.min.js"></script>
     <script src="bootstrap_js/bootstrap.js"></script>

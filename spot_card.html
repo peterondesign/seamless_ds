@@ -31,8 +31,8 @@
                         <h1 class="bd-title" id="content">Spot Card</h1>
                     </div>
                     <p class="bd-lead">
-                        Use Bootstrap&rsquo;s custom button styles for actions in forms,
-                        dialogs, and more with support for multiple sizes, states, and more.
+                        Cards are a flexible component used to display content and actions in a variety of contexts. They are generally restricted to a single topic and it should be easy for users to scan relevant and actionable information. Content, such as images and text,
+                        should be positioned within them in a manner that demonstrates their intended hierarchy.
                     </p>
                 </div>
 
@@ -189,10 +189,10 @@
     </div>
     <script>
         const xhttp = new XMLHttpRequest();
-        xhttp.onload = function () {
+        xhttp.onload = function() {
             header_nav = document.getElementById("header_nav")
-            // document.getElementById("header_sidebar").innerHTML =
-            // this.responseText;
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
             header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
 
         }
@@ -201,18 +201,17 @@
     </script>
     <script>
         const xhr = new XMLHttpRequest();
-        xhr.onload = function () {
+        xhr.onload = function() {
             sidebar = document.getElementById("sidebar")
-            // document.getElementById("header_sidebar").innerHTML =
-            // this.responseText;
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
             sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
 
         }
         xhr.open("GET", "sidebar.html");
         xhr.send();
     </script>
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="/docs/5.0/assets/js/docs.min.js"></script>

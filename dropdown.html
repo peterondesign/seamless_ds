@@ -31,8 +31,7 @@
                         <h1 class="bd-title" id="content">Dropdown</h1>
                     </div>
                     <p class="bd-lead">
-                        Use Bootstrap&rsquo;s custom button styles for actions in forms,
-                        dialogs, and more with support for multiple sizes, states, and more.
+                        Dropdowns lists (or simply dropdowns) are used to provide the user with a list of options, which can be either actions or input values. Dropdown lists are triggered by dropdown buttons or form inputs.
                     </p>
                 </div>
 
@@ -60,58 +59,58 @@
                         Dropdown </p>
                     <div class="bd-example">
                         <div class="shr_simple_dropdown_wrapper">
-                            <div id="shr_simple_dropdown_dropdowncard"
-                                class="shr_simple_dropdown_dropdowncard shr_color_blue">
+                            <div id="shr_simple_dropdown_dropdowncard" class="shr_simple_dropdown_dropdowncard shr_color_blue">
                                 <ul>
                                     <li class="shr_simple_dropdown_dropdowncard_primary">Blog</li>
                                     <li class="shr_simple_dropdown_dropdowncard_primary">E-books</li>
-                                    <li id="shr_dropdown_active"
-                                        class="shr_simple_dropdown_dropdowncard_primary shr_dropdown_active">Guides &
-                                        Tutorials<img src="arrow_right.svg" class="arrow_right"></img></li>
+                                    <li id="shr_dropdown_active" class="shr_simple_dropdown_dropdowncard_primary shr_dropdown_active">Guides & Tutorials
+                                        <img src="arrow_right.svg" class="arrow_right"></img>
+                                    </li>
                                     <li class="shr_simple_dropdown_dropdowncard_primary">Insights</li>
                                     <li class="shr_simple_dropdown_dropdowncard_primary">FAQs</li>
                                     <li class="shr_simple_dropdown_dropdowncard_primary">Terms and Conditions</li>
                                     <li class="shr_simple_dropdown_dropdowncard_primary">Privacy policy</li>
                                 </ul>
                             </div>
-                            <div id="shr_simple_dropdown_dropdowncard_secondary"
-                                class="shr_simple_dropdown_dropdowncard shr_simple_dropdown_dropdowncard_secondary">
+                            <div id="shr_simple_dropdown_dropdowncard_secondary" class="shr_simple_dropdown_dropdowncard shr_simple_dropdown_dropdowncard_secondary">
                                 <ul>
                                     <li>Guide 1</li>
                                     <li>Guide 2</li>
-                                    <li>Guide 3<img class="icon_dark.svg"></img></li>
+                                    <li>Guide 3<img class="icon_dark.svg"></img>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
 
                     </div>
-                    
+
 
                     <!-- Script Dropdown -->
                     <script>
                         /* When the user clicks on the button, 
-                        toggle between hiding and showing the dropdown content */
+                                                toggle between hiding and showing the dropdown content */
 
-                                                let selected_dropdowns = document.querySelectorAll('.shr_simple_dropdown_dropdowncard_primary');
+                        let selected_dropdowns = document.querySelectorAll('.shr_simple_dropdown_dropdowncard_primary');
 
 
-                        selected_dropdowns.forEach(function (selected_dropdown) {
-                         selected_dropdown.addEventListener('click', myFunction);
+                        selected_dropdowns.forEach(function(selected_dropdown) {
+                            selected_dropdown.addEventListener('click', myFunction);
                         })
+
                         function myFunction() {
-                          document.getElementById("shr_simple_dropdown_dropdowncard_secondary").classList.toggle("show");
+                            document.getElementById("shr_simple_dropdown_dropdowncard_secondary").classList.toggle("show");
                         }
-                        
+
                         // Close the dropdown if the user clicks outside of it
                         window.onclick = function(e) {
-                          if (!e.target.matches('.shr_simple_dropdown_dropdowncard_primary')) {
-                          let myDropdown = document.getElementById("shr_simple_dropdown_dropdowncard_primary");
-                            if (myDropdown.classList.contains('show')) {
-                              myDropdown.classList.remove('show');
+                            if (!e.target.matches('.shr_simple_dropdown_dropdowncard_primary')) {
+                                let myDropdown = document.getElementById("shr_simple_dropdown_dropdowncard_primary");
+                                if (myDropdown.classList.contains('show')) {
+                                    myDropdown.classList.remove('show');
+                                }
                             }
-                          }
                         }
-                        </script>
+                    </script>
 
                     <div class="highlight">
                         <pre class="chroma">
@@ -145,15 +144,15 @@
                     </div>
 
                     <p>
-Mega
+                        Mega
                     </p>
                     <div class="bd-example">
                         <div class="shr_mega_dropdown_wrapper">
                             <div class="shr_mega_dropdown_tag">
-                            <div>
-                                CORE
+                                <div>
+                                    CORE
+                                </div>
                             </div>
-                        </div>
                             <div class="shr_mega_dropdown_heading">
                                 Exit management
                             </div>
@@ -289,10 +288,10 @@ Mega
     </div>
     <script>
         const xhttp = new XMLHttpRequest();
-        xhttp.onload = function () {
+        xhttp.onload = function() {
             header_nav = document.getElementById("header_nav")
-            // document.getElementById("header_sidebar").innerHTML =
-            // this.responseText;
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
             header_nav.insertAdjacentHTML('afterbegin', this.responseText);;
 
         }
@@ -301,19 +300,18 @@ Mega
     </script>
     <script>
         const xhr = new XMLHttpRequest();
-        xhr.onload = function () {
+        xhr.onload = function() {
             sidebar = document.getElementById("sidebar")
-            // document.getElementById("header_sidebar").innerHTML =
-            // this.responseText;
+                // document.getElementById("header_sidebar").innerHTML =
+                // this.responseText;
             sidebar.insertAdjacentHTML('beforebegin', this.responseText);;
 
         }
         xhr.open("GET", "sidebar.html");
         xhr.send();
     </script>
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="/docs/5.0/assets/js/docs.min.js"></script>
     <script src="bootstrap_js/bootstrap.js"></script>
